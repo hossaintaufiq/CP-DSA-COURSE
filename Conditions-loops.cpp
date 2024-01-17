@@ -2,8 +2,18 @@
 using namespace std; 
 
 int main (){
-	int x=2; 
-	int y=3;
-	int z=5;
-	cout<< (x!=y);
+	int t; 
+	
+	cin >> t; 
+
+	while (t--){
+		int n ; 
+		cin>> n ;
+		for(int i=0 ; i<n; i++ ){
+			for( int j =0 ; j<=i; j++){
+				cout<<"*"; 
+			}
+			cout<< endl; 
+		}
+	}
 }
