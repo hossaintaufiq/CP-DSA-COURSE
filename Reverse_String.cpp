@@ -16,17 +16,17 @@ int main(){
 
 		}
 
-		// cout<<reverse_str<<endl;
+		cout<<reverse_str<<endl;
 
 		// for palindrom string  start 
-		if(x == reverse_str){
-			cout<<"YES";
-		}
-		else{
-			cout<<"NO";
-		}
+		// if(x == reverse_str){
+		// 	cout<<"YES";
+		// }
+		// else{
+		// 	cout<<"NO";
+		// }
 
-		cout<<endl;
+		// cout<<endl;
 
 
 
