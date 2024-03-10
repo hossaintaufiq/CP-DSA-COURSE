@@ -6,6 +6,15 @@
 
 using namespace std ; 
 
+
+	class employee{
+	public: 
+		string name; 
+		int salary; 
+
+	}; 
+
+
 int main (){
 	int n; 
 	cin>>n;  
@@ -15,4 +24,17 @@ int main (){
 	int digits= (int)log10(n);
 
 	cout<<digits;
+
+
+
+	employee har; 
+	har.name= " harry";
+	har.salary = 100; 
+
+	cout<<"The name of our 1st emplyee is : "<<har.name<<" and his salary is : "<< har.salary;
+	
+
+
+
+
 }
