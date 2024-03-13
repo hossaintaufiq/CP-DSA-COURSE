@@ -3,16 +3,18 @@
 using namespace std; 
 
 int main(){
-	char x; 
-	cin>>x; 
+	int n;
 
-	if(x>='a' && x<='y'){
-		x++;
-	}
+	int x,y;
 
-	else if(x='z'){
-		x='a';
+	cin>>n; 
+	x=n%10;
+	y=n/10;
+
+	if(x%y==0 || y%x==0){
+		cout<<"YES";
 	}
-	
-	cout<<x; 
+	else{
+		cout<<"NO";
+	}
 }
