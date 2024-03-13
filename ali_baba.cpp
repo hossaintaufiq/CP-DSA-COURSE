@@ -6,7 +6,13 @@ int main(){
 	long int x,y,z;
 	long long int d;
 
-	if(x*y*z= d || (x*y)+z=d || (x*y)-z=d || (x+y)+z=d || (x-y)*z=d || x+(y*z)=d || x-(y*z)=d || x+y+z=d || (x+y)-z)
+	if(x*y*z== d || (x*y)+z==d || (x*y)-z==d || (x+y)+z==d || (x-y)*z==d || x+(y*z)==d || x-(y*z)==d || x+y+z==d || (x+y)-z==d || x-(z+y)==d){
+		cout<<"YES";
+
+	}
+	else {
+		cout<<"NO";
+	}
 
 
 }

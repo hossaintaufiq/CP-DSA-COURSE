@@ -3,18 +3,9 @@
 using namespace std; 
 
 int main(){
-	int n;
+	long long n,m,k;
 
-	int x,y;
+	cin>>n>>m>>k;
 
-	cin>>n; 
-	x=n%10;
-	y=n/10;
-
-	if(x%y==0 || y%x==0){
-		cout<<"YES";
-	}
-	else{
-		cout<<"NO";
-	}
+	if 
 }
