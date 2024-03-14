@@ -2,29 +2,22 @@
 using namespace std;
 
 int main() {
-    double x, y;
+    int n; 
+    cin>>n; 
 
-    // Input coordinates
-    cin >> x >> y;
+    int year= n/365;
 
-    // Determine the quarter or axis
-    if (x == 0 && y == 0) {
-        cout << "Origem" << endl;
-    } else if (x == 0) {
-        cout << "Eixo Y" << endl;
-    } else if (y == 0) {
-        cout << "Eixo X" << endl;
-    } else if (x > 0 && y > 0) {
-        cout << "Q1" << endl;
-    } else if (x < 0 && y > 0) {
-        cout << "Q2" << endl;
-    } else if (x < 0 && y < 0) {
-        cout << "Q3" << endl;
-    } else {
-        cout << "Q4" << endl;
-    }
+    int remainder = n- (year*365);
+    int month= remainder/30;
+    int days= remainder%30;
+   
 
-    return 0;
+    cout<< year<<" years"<<endl;
+    cout<<month << " months"<<endl;
+    cout<< days<< " days";
+    // cout<<n;
+
+
 }
 
 
