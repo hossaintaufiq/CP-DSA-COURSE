@@ -18,6 +18,6 @@ int main() {
     cout<< "ceil "<<x<<" / "<<y<<" = "<<ceilValue<<endl;
     cout<< "round "<<x<<" / "<<y<<" = "<<roundValue<<endl;
 
-    // cout<< x<<y;
+    
 
 }
