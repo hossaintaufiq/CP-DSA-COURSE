@@ -2,14 +2,19 @@
 
 using namespace std; 
 
-int main(){
-	int a;
-	long long l; 
-	char ch; 
-	float f; 
-	double d; 
 
-	cin>>a>>l>>ch>>f>>d; 
+int main() {
 
-	cout<<a<<endl<<l<<endl<<ch<<endl<<f<<endl<<d;
+	const double pi= 3.141592653; 
+	double n;
+	cin>>n; 
+
+
+	double area= pi* (n*n);
+    
+   
+    cout <<fixed << setprecision(9); 
+    cout << area<<endl;
+
+    return 0;
 }
