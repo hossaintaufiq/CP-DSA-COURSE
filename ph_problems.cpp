@@ -5,16 +5,14 @@ using namespace std;
 
 int main() {
 
-	const double pi= 3.141592653; 
-	double n;
-	cin>>n; 
+	long long int x,y; 
 
+	cin>>x>>y; 
 
-	double area= pi* (n*n);
-    
-   
-    cout <<fixed << setprecision(9); 
-    cout << area<<endl;
+	int x_last_digit= x%10;
+	int y_last_digit= y%10;
 
-    return 0;
+	int sum= x_last_digit+y_last_digit;
+
+	cout<<sum;
 }
