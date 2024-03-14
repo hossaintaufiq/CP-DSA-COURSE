@@ -1,25 +1,33 @@
-#include<bits/stdc++.h>
-using namespace std; 
+#include <iostream>
+using namespace std;
 
-int main ( ){
+int main() {
+    double x, y;
 
-	char x; 
-	cin>>x;
+    // Input coordinates
+    cin >> x >> y;
 
-	if((x>='a' && x<='z' ) || (x>='A' && x<='Z')){
-		cout<<"ALPHA"<<endl;
+    // Determine the quarter or axis
+    if (x == 0 && y == 0) {
+        cout << "Origem" << endl;
+    } else if (x == 0) {
+        cout << "Eixo Y" << endl;
+    } else if (y == 0) {
+        cout << "Eixo X" << endl;
+    } else if (x > 0 && y > 0) {
+        cout << "Q1" << endl;
+    } else if (x < 0 && y > 0) {
+        cout << "Q2" << endl;
+    } else if (x < 0 && y < 0) {
+        cout << "Q3" << endl;
+    } else {
+        cout << "Q4" << endl;
+    }
 
-		if(x>='a' && x<='z'){
-			cout<<"IS SMALL";
-		}
-		else if(x>='A' && x<='Z'){
-			cout<<"IS CAPITAL";
-		}
-	}
-
-	 else if(x>='0' && x<='9'){
-		cout<<"IS DIGIT";
-	}
-
-
+    return 0;
 }
+
+
+
+
+
