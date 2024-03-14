@@ -5,14 +5,12 @@ using namespace std;
 
 int main() {
 
-	long long int x,y; 
+	long int n; 
 
-	cin>>x>>y; 
+	cin>>n;  
 
-	int x_last_digit= x%10;
-	int y_last_digit= y%10;
+	long int sum = (n*(n+1))/2;
+	cout<<sum ; 
 
-	int sum= x_last_digit+y_last_digit;
 
-	cout<<sum;
 }
