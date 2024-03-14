@@ -3,9 +3,13 @@
 using namespace std; 
 
 int main(){
-	long long n,m,k;
+	int a;
+	long long l; 
+	char ch; 
+	float f; 
+	double d; 
 
-	cin>>n>>m>>k;
+	cin>>a>>l>>ch>>f>>d; 
 
-	if 
+	cout<<a<<endl<<l<<endl<<ch<<endl<<f<<endl<<d;
 }
