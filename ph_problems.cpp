@@ -4,13 +4,20 @@ using namespace std;
 
 
 int main() {
+	double x,y;
+	cin>>x>>y;
 
-	long int n; 
+	double number= x/y;
 
-	cin>>n;  
+	double ceilValue = ceil(number); 
+    double floorValue = floor(number); 
+    double roundValue = round(number);
 
-	long int sum = (n*(n+1))/2;
-	cout<<sum ; 
 
+    cout<< "floor "<<x<<" / "<<y<<" = "<<floorValue<<endl;
+    cout<< "ceil "<<x<<" / "<<y<<" = "<<ceilValue<<endl;
+    cout<< "round "<<x<<" / "<<y<<" = "<<roundValue<<endl;
+
+    // cout<< x<<y;
 
 }
