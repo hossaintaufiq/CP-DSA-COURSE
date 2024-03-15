@@ -5,5 +5,13 @@
 using namespace std; 
 
 int main(){
+    int a;
+    cin>>a; 
+
+    // for(int i=0; i<=a;i++){
+        double sum=a%100;
+    cout<<sum<<endl;
+    // }
     
+
 }
