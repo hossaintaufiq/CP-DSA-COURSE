@@ -20,11 +20,6 @@ int main() {
    else{
    	cout<<"Out of Intervals";
    }
-
-
-
-
-
 }
 
 

@@ -1,26 +1,35 @@
-#include<bits/stdc++.h>
-using namespace std; 
+#include <iostream>
 
-int main(){
-	string s; 
-	cin>>s; 
+using namespace std;
 
-	int count=0;
+int main() {
+    int A, B , C ; 
+    char S ,Q ;
+    cin>> A>> S>> B>>Q>>C;
 
+    if(S=='+'){
+    	if(A+B==C){
+    		cout<<"Yes";
+    	}
+    	else {
+    		cout<<A+B;
+    	}
+    }
+    if(S=='-'){
+    	if(A-B==C){
+    		cout<<"Yes";
+    	}
+    	else {
+    		cout<<A-B;
+    	}
+    }
+    if(S=='*'){
+    	if(A*B==C){
+    		cout<<"Yes";
+    	}
+    	else {
+    		cout<<A*B;
+    	}
+    }
 
-	for(int i=0;i<s.length();i++){
-		// if(s[i]==s[i]){
-		// 	continue;
-		// }
-		// else{
-		// 	count++;
-		// }
-		count++;
-
-		cout<<s[i]<<endl;
-	}
-
-
-	cout<<s<<endl;
-	cout<<count;
 }
