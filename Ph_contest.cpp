@@ -1,23 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std; 
 
+
+// int n= 10e4-1; 
 int main(){
-	int n; 
+	int n;
+	cin>>n;
+	int a[n];
 
-	cin>>n; 
-	int count=0;
+	for(int i=0;i<n;i++){
+		cin>>a[i];
+	}
 
-	for(int i=1;i<=n;i++){
-		// cout<<i<<endl;
-		if(i%2==0){
-			cout<<i<<endl;
-			count++;
+	for(int i=0;i<n;i++){
+		if(a[0]<a[i]){
+			a[0]=a[i];
 		}
-		
 	}
 
-	if(count==0){
-		cout<<"-1";
-	}
+	cout<<a[0];
 
 }
