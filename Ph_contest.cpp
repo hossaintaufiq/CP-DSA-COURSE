@@ -1,23 +1,30 @@
-#include<bits/stdc++.h>
-using namespace std; 
+#include <iostream>
+#include <cmath>
+using namespace std;
 
+bool isPrime(int num) {
+    if (num <= 1)
+        return false;
+    if (num <= 3)
+        return true;
+    if (num % 2 == 0 || num % 3 == 0)
+        return false;
+    for (int i = 5; i * i <= num; i += 6) {
+        if (num % i == 0 || num % (i + 2) == 0)
+            return false;
+    }
+    return true;
+}
 
-// int n= 10e4-1; 
-int main(){
-	int n;
-	cin>>n;
-	int a[n];
+int main() {
+    int n;
+    cin >> n;
 
-	for(int i=0;i<n;i++){
-		cin>>a[i];
-	}
+    for (int i = 2; i <= n; i++) {
+        if (isPrime(i)) {
+            cout << i << " ";
+        }
+    }
 
-	for(int i=0;i<n;i++){
-		if(a[0]<a[i]){
-			a[0]=a[i];
-		}
-	}
-
-	cout<<a[0];
-
+    return 0;
 }
