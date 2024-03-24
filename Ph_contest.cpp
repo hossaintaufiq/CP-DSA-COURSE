@@ -1,30 +1,49 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-bool isPrime(int num) {
-    if (num <= 1)
-        return false;
-    if (num <= 3)
-        return true;
-    if (num % 2 == 0 || num % 3 == 0)
-        return false;
-    for (int i = 5; i * i <= num; i += 6) {
-        if (num % i == 0 || num % (i + 2) == 0)
-            return false;
-    }
-    return true;
-}
-
 int main() {
-    int n;
-    cin >> n;
+    int N;
+    cin >> N;
 
-    for (int i = 2; i <= n; i++) {
-        if (isPrime(i)) {
-            cout << i << " ";
-        }
+    if (N == 1) {
+        cout << "0";
+        return 0;
+    }
+
+    int fib[N];
+    fib[0] = 0;
+    fib[1] = 1;
+
+    cout << fib[0] << " " << fib[1] << " ";
+
+    for (int i = 2; i < N; ++i) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+        cout << fib[i] << " ";
     }
 
     return 0;
 }
+
+
+
+// old code 
+
+// #include <iostream>
+// using namespace std;
+
+// int fib(int n) {
+//     if (n <= 1)
+//         return n;
+//     return fib(n - 1) + fib(n - 2);
+// }
+
+// int main() {
+//     int N;
+//     cin >> N;
+
+//     for (int i = 0; i < N; ++i) {
+//         cout << fib(i) << " ";
+//     }
+
+//     return 0;
+// }

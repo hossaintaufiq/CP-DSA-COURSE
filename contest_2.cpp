@@ -14,6 +14,18 @@ void printPyramid(int N) {
         }
         cout << endl;
     }
+      for (int i = 1; i <= N; ++i) {
+        // Print spaces
+        for (int j = N - i; j <=N ; ++j) {
+            cout << " ";
+        }
+        // Print stars
+        for (int j = 2 * i - 1; j <= N; ++j) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+ 
 }
 
 int main() {
