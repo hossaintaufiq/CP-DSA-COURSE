@@ -43,25 +43,43 @@
 //     return 0;
 // }
 
+// #include<bits/stdc++.h>
+// using namespace std ; 
+
+// int main(){
+// 	int t; 
+// 	cin>>t;
+
+// 	while(t--){
+// 		int x,y; 
+// 		cin>>x>>y; 
+
+
+// 		if(x==y){
+// 			cout<<"Square"<<endl;
+// 		}
+// 		else{
+// 			cout<<"Rectangle"<<endl;
+// 		}
+// 	}
+
+
+// }
+
 #include<bits/stdc++.h>
-using namespace std ; 
+using namespace std; 
 
 int main(){
-	int t; 
-	cin>>t;
+	int n; 
+	cin>>n; 
 
-	while(t--){
-		int x,y; 
-		cin>>x>>y; 
+	int a[n];
 
-
-		if(x==y){
-			cout<<"Square"<<endl;
-		}
-		else{
-			cout<<"Rectangle"<<endl;
-		}
+	for(int i=0;i<n;i++){
+		cin>>a[i];
 	}
 
-
+	for(int i=n-1; i>=0; --i){
+		cout<<a[i]<<" " ;
+	}
 }
