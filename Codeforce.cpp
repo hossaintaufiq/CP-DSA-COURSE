@@ -66,20 +66,66 @@
 
 // }
 
+// #include<bits/stdc++.h>
+// using namespace std; 
+
+// int main(){
+// 	int n; 
+// 	cin>>n; 
+
+// 	int a[n];
+
+// 	for(int i=0;i<n;i++){
+// 		cin>>a[i];
+// 	}
+
+// 	for(int i=n-1; i>=0; --i){
+// 		cout<<a[i]<<" " ;
+// 	}
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std ; 
+
+// char lower(char a){
+// 	char b; 
+// 	b=tolower(a);
+// 	return b; 
+// }
+// int main(){
+
+// 	string s;
+// 	cin>>s; 
+
+// 	for(int i=0; i<s.length();i++){
+// 		s[i]=lower(s[i]);
+
+// 		if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||s[i]=='y'){
+// 			continue;
+
+// 		}
+
+// 		cout<<"." <<s[i];
+// 	}
+
+// }
+
+
 #include<bits/stdc++.h>
 using namespace std; 
 
 int main(){
-	int n; 
-	cin>>n; 
+	long long int n;
+	int k; 
+	cin>>n>>k;
 
-	int a[n];
-
-	for(int i=0;i<n;i++){
-		cin>>a[i];
+	for(int i=0;i<k;i++){
+		if(n%10!=0){
+			n=n-1;
+		}
+		else if(n%10==0){
+			n=n/10;
+		}
 	}
-
-	for(int i=n-1; i>=0; --i){
-		cout<<a[i]<<" " ;
-	}
+	cout<<n;
 }
