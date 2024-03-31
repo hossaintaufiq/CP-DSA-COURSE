@@ -1,0 +1,44 @@
+// #include<bits/stdc++.h>
+// // #include<string>
+// using namespace std; 
+
+// int main(){
+// 	string s,t; 
+
+// 	cin>>s>>t; 
+
+// 	reverse(s.begin(),s.end());
+
+// 	if(s==t){
+// 		cout<<"YES";
+// 	}
+// 	else {
+// 		cout<<"NO";
+// 	}
+
+
+
+// }
+
+
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main() {
+	 int n;
+	 cin>>n;
+	 int capacity=0;
+	 int stillnow=0;
+	 for(int i=0;i<n;i++){
+		 int a,b;
+		 cin>>a>>b;
+		 stillnow-=a;
+		 stillnow+=b;
+		 capacity=max(capacity,stillnow);
+
+	 }
+	 cout<<capacity;
+
+	return 0;
+}

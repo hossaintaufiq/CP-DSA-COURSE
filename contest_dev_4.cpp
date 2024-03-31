@@ -81,37 +81,70 @@
 
 // new code
 
-#include<bits/stdc++.h>
-#include<string>
-using namespace std ; 
+// #include<bits/stdc++.h>
+// #include<string>
+// using namespace std ; 
 
-int main(){
-	long long int n; 
-	cin>>n; 
+// int main(){
+// 	long long int n; 
+// 	cin>>n; 
 
-	string s;
-	s= to_string(n);
-	int count=0;
+// 	string s;
+// 	s= to_string(n);
+// 	int count=0;
 
-	for(int i=0;i<s.length();i++){
-		if(s[i]=='4' || s[i]=='7'){
-			count++;
+// 	for(int i=0;i<s.length();i++){
+// 		if(s[i]=='4' || s[i]=='7'){
+// 			count++;
 
-		}
+// 		}
 		
 
 
-	}
+// 	}
 
-	if(count == 4 || count ==7){
+// 	if(count == 4 || count ==7){
 
-		cout<<"YES";
-	}
-	else{
-			cout<<"NO";
-			// break;
+// 		cout<<"YES";
+// 	}
+// 	else{
+// 			cout<<"NO";
+// 			// break;
+// 		}
+
+	
+	
+// }
+
+#include<bits/stdc++.h>
+using namespace std; 
+
+int main(){
+	int n,anton=0, danik=0; 
+	cin>>n ; 
+
+	string s; 
+
+	cin>>s; 
+
+	for(int i=0;i<n;i++){
+		if(s[i]=='A'){
+			anton++;
+		}
+		else if(s[i]=='D'){
+			danik++;
 		}
 
-	
-	
+	}
+
+
+	if(anton>danik){
+		cout<<"Anton";
+	}
+	else if(anton<danik){
+		cout<<"Danik";
+	}
+	else if(anton == danik){
+		cout<<"Friendship";
+	}
 }
