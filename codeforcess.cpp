@@ -117,26 +117,119 @@
 // }
 
 
-#include<bits/stdc++.h>
-using namespace std ;
+// #include<bits/stdc++.h>
+// using namespace std ;
  
 
- int main(){
- 	int n;
- 	cin>>n;
+//  int main(){
+//  	int n;
+//  	cin>>n;
 
- 	double sum=0,answer=0;
+//  	double sum=0,answer=0;
 
- 	int a[n];
- 	for(int i=0;i<n;i++){
- 		cin>>a[i];
+//  	int a[n];
+//  	for(int i=0;i<n;i++){
+//  		cin>>a[i];
 
- 		sum+=a[i];
- 	}
+//  		sum+=a[i];
+//  	}
 
- 	answer=sum/n;
+//  	answer=sum/n;
 
- 	cout<<fixed<<setprecision(12)<<answer<<endl;
+//  	cout<<fixed<<setprecision(12)<<answer<<endl;
 
 
- }
+//  }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int n=4,c=0,dif=0;
+//     long long int a[15];
+//     for(int i=0; i<n; i++)
+//         cin>>a[i];
+//     sort(a,a+n);
+//     for(int i=0; i<n; i++)
+//         if(a[i]!=a[i+1])
+//             c++;
+
+//     cout<<n-c<<endl;
+//     return 0;
+
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std; 
+
+// int main(){
+// 	int n=4,c=0, dif=0;
+
+// 	long long int a[15];
+// 	for(int i=0;i<n; i++){
+// 		cin>>a[i];
+// 		// sort(a,a+n);
+// 	}
+
+// 	sort(a,a+n);
+
+// 	for(int i=0;i<n;i++){
+// 		if(a[i]!=a[i+1]){
+// 			c++;
+// 		}
+// 	}
+
+// 	cout<<n-c;
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std ;
+
+// int main(){
+// 	int n; 
+// 	cin>>n ;
+
+// 	for(int i=1;i<=n;i++){
+
+// 		if(i>1){
+// 			cout<<"that ";
+// 		}
+// 		if(i%2==0){
+// 			cout<<"I love ";
+// 		}
+// 		// else if(i==1)
+// 		// 	cout<<"I love ";
+
+// 		else 
+// 		cout<<"I hate ";
+		
+// 	}
+
+// 	cout<<"it";
+// }
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+// 	int t; 
+// 	cin>>t; 
+
+// 	while(t--){
+// 		long long int a,b; 
+// 		cin>>a>>b; 
+
+// 		long long int remainder= a%b;
+
+// 		long long int 
+// 	}
+// }
+
+	for(int i=0;i<=10;i++){
+		if(i%2==0){
+			cout<<i;
+		}
+	}
+
+		}
