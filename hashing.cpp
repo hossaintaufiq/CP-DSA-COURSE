@@ -88,8 +88,43 @@ using namespace std;
 	 	// x will be protected 
 	 	// y will be protected 
 	 	// z will be inaccessible 
-	 }
+	 };
 
+	 // inheritance \
+
+	 class parents{
+	 public: 
+	 	parents(){
+	 		cout<<"Parent class"<<endl;
+	 	}
+	 };
+
+	 class parents2{
+	 public:
+	 	parents2(){
+	 		cout<<"Parents 2 class"<<endl;
+	 	}
+	 };
+	 class child:public parents,public parents2{
+	 public: 
+	 	child(){
+	 		cout<<"child class "<<endl;
+	 	}
+	 };
+
+	 class children:public parents{
+	 public:
+	 	children(){
+	 		cout<<"another child class"<<endl;
+	 	}
+	 };
+	 class grandChild:public child{
+	 public: 
+	 	grandChild(){
+	 		cout<<"Grand child class"<<endl;
+	 	}
+	 	
+	 };
 
 
 
@@ -136,5 +171,11 @@ int main(){
 	parent p; 
 
 	p.x;
+
+	// inheritance 
+	grandChild gc; 
+	children c; 
+
+
 
 }
