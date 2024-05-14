@@ -3,16 +3,19 @@ using namespace std;
 
 
 
-void numbers(int x){
-	for(int i=1; i<=x;i++){
-		cout<<i;
+long long int factorial_numbers(long long int n){
+	if(n==0){
+		return 1;
 	}
-}
+	long long int ans = factorial_numbers(n-1);
+	return ans*n;
+	}
 
 
 int main(){
-	int n; 
-	scanf ;
+	long long int n; 
+	cin>>n; 
 
-	numbers(n);
+	long long int result= factorial_numbers(n);
+	cout<<result;
 }
